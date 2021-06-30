@@ -1,0 +1,57 @@
+{% load static %}
+
+<div style="border: 1px; background: white; height: 146px;">
+    <div class="d-flex justify-content-lg-center">
+        <div>
+            <a class="navbar-brand mt-4" href="{% url "main:index" %}">
+                <img class="img-fluid"
+                     src="https://asaxiy.uz/custom-assets/images/logos/asaxiy-logo.svg" alt="logo">
+            </a>
+        </div>
+
+        {% include "layouts/search.html" %}
+
+
+
+        <div>
+            <ul class="navbar-nav mr-auto mt-4" style="margin-left: 55px">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle border rounded text-secondary"
+                       style="width: 100px; color: black; padding-left: 3px" href="#"
+                       id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Oʻzbakcha
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">🇸🇱Uz</a>
+                        <a class="dropdown-item" href="#">🇷🇺Ru</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-4" style="margin-left: 15px; padding-top: 8px">
+            <a href="{% url "main:add-cart" %}" class="ml-4 ml-lg-3 text-secondary position-relative h-icon"
+               data-toggle="tooltip" title="#">
+                <i class="bi bi-basket"></i>Savatcha <span class="badge badge-danger position-absolute">{{ cart }}</span>
+            </a>
+        </div>
+        <div class="mt-4 ml-5" style="padding-top: 8px">
+            <a href="">
+                <i class="bi bi-phone text-secondary"></i>
+                <span class="text-secondary">+99897 263 44 88</span>
+            </a>
+        </div>
+    </div>
+    <!--</div>-->
+
+
+    <div style="border: 1px solid darkgrey; margin-top: 18px"></div>
+
+    <div class="d-flex justify-content-lg-center  mt-3">
+        {% for categor in categories %}
+            <a href="{% url "main:mahsulot" categor.id %}" class="cer mx-2 text-secondary">{{ categor.name_uz }}</a>
+        {% endfor %}
+    </div>
+
+
+</div>

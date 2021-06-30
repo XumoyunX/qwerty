@@ -1,0 +1,17 @@
+body{
+    background-color: #ececff;
+}
+.qwer{
+    background-size: cover;
+    background-position: center;
+    height: 274px;
+}
+.cer{
+    font-size: 14px;
+}
+
+.wer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}

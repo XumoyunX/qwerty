@@ -1,0 +1,39 @@
+.cer {
+    color: black;
+    font-size: 14px;
+}
+body{
+    background-color: #ececff;
+}
+
+.team{
+    border: 5px solid #ddd;
+    background: white;
+}
+
+.team button:hover{
+    color: red;
+}
+.custom-img {
+    width: 180px !important;
+    height: 180px !important;
+    background-size: cover;
+    background-position: center;
+background-image: url("https://assets.asaxiy.uz/product/main_image/desktop//60769706e85a7.jpg");
+}
+.card{
+    border: none;
+}
+
+.qwe{
+    color: white;
+}
+.wer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+
+
